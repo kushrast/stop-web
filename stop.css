@@ -1,1 +1,7 @@
-/* CSS declarations go here */
+#main-logo{
+	height:220px;
+	padding-top:10px;
+}
+body {
+	font-family: Lato
+}

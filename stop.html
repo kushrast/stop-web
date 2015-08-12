@@ -1,14 +1,18 @@
 <head>
-  <title>stop</title>
+  <title>STOP!</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <center><img src="/assets/stop.png" id="main-logo">
 
-  {{> hello}}
+  {{> stop}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="stop">
+	<center>
+		<div class="col-md-3">
+        	<a href="#fakelink" class="btn btn-block btn-lg btn-danger">Danger Button</a>
+    	</div>
+    </center>
 </template>
