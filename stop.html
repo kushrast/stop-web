@@ -5,7 +5,9 @@
 
 <body>
 	{{> main}}
-	{{> stop}}
+	<center>
+		{{> loginButtons}}
+	</center>
 </body>
 <template name="main">
 	<center>
@@ -13,7 +15,6 @@
 			<img class="stop-button" src="assets/stop.png">
 		</div>
 	</center>
-	{{> loginButtons}}
 </template>
 
 <template name="stop">
