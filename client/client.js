@@ -1,17 +1,18 @@
 if (Meteor.isClient) {
   // counter starts at 0
-  Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
+  Template.main.events({
+    'mouseover .stop-button': function(){
+      $('.stop-button').attr('src', 'assets/stophover.png');
+    },
+    'mousedown .stop-button': function(){
+      $('.stop-button').attr('src', 'assets/stoppressed.png');
+    },
+    'mouseup .stop-button': function(){
+      $('.stop-button').attr('src', 'assets/stophover.png');
+    },
+    'mouseout .stop-button': function(){
+      $('.stop-button').attr('src', 'assets/stop.png');
     }
   });
 }

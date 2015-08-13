@@ -3,11 +3,13 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <center><img src="/assets/stop.png" id="main-logo">
-
-  {{> stop}}
-</body>
+<template name="main">
+	<center>
+		<div class="button-wrapper">
+			<img class="stop-button" src="assets/stop.png">
+		</div>
+	</center>
+</template>
 
 <template name="stop">
 	<center>
