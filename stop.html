@@ -8,9 +8,9 @@
 	<center>
 		{{> loginButtons}}
 	</center>
-	{{#if currentUser}}
-		Hi Billy you retard
-	{{/if}}
+	<center>			
+		{{> stop}}
+	</center>
 </body>
 <template name="main">
 	<center>
@@ -21,9 +21,11 @@
 </template>
 
 <template name="stop">
+	<div class="row">
 	<center>
-		<div class="col-md-3">
-        	<a href="#fakelink" class="btn btn-block btn-lg btn-danger">Danger Button</a>
+		<div class="col-md-2 col-md-offset-5">
+        	<input type="text" value="" placeholder="Stop Someone Now..." class="form-control">
     	</div>
-    </center>
+    	</center>
+    </div>
 </template>
