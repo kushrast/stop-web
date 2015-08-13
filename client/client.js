@@ -6,13 +6,13 @@ if (Meteor.isClient) {
       $('.stop-button').attr('src', 'assets/stophover.png');
     },
     'mousedown .stop-button': function(){
-      $('.stop-button').attr('src', 'assets/stoppressed.png');
+      $('.stop-button').attr('src', 'assets/stoppress.png');
     },
     'mouseup .stop-button': function(){
       $('.stop-button').attr('src', 'assets/stophover.png');
     },
     'mouseout .stop-button': function(){
-      $('.stop-button').attr('src', 'assets/stop.png');
+      $('.stop-button').attr('src', 'assets/stop.png'); 
     }
   });
 }

@@ -3,12 +3,17 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 
+<body>
+	{{> main}}
+	{{> stop}}
+</body>
 <template name="main">
 	<center>
 		<div class="button-wrapper">
 			<img class="stop-button" src="assets/stop.png">
 		</div>
 	</center>
+	{{> loginButtons}}
 </template>
 
 <template name="stop">
