@@ -1,0 +1,1 @@
+stop_requests = new Mongo.Collection("stop_requests");

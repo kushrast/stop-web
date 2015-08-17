@@ -8,9 +8,12 @@
 	<center>
 		{{> loginButtons}}
 	</center>
-	<center>			
-		{{> stop}}
-	</center>
+	{{#if currentUser}}
+		<center>			
+			{{> stop}}
+			{{> requests}}
+		</center>
+	{{/if}}
 </body>
 <template name="main">
 	<center>
@@ -23,9 +26,19 @@
 <template name="stop">
 	<div class="row">
 	<center>
-		<div class="col-md-2 col-md-offset-5">
-        	<input type="text" value="" placeholder="Stop Someone Now..." class="form-control stopname">
+		<div class="col-md-2 col-md-offset-5 {{validation}}">
+        	<input type="text" value="" placeholder="Stop Someone Now..." class="form-control" id="stoptarget">
     	</div>
     	</center>
     </div>
+</template>
+
+<template name="requests">
+	<div class="col-md-4 col-md-offset-4" id="stop-req">
+		<ul class="list-group">
+			{{#each req}}
+  				<li class="list-group-item {{read}}" id="stopmessage">{{sender}} wants you to stop.</li>
+			{{/each}}
+		</ul>
+	</div>
 </template>
